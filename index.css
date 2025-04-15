@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+/* fonts */
+/* nav bar start */
+.navi{
+    height:8vh;
+    backdrop-filter:blur(8px);
+    background:linear-gradient(135deg, rgba(225,225,225,0.1),rgba(225,225,225,0));
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+#navcolor{
+color:orangered;
+font-weight: bold;
+}
+#navcolor:hover{
+    border-bottom: 2px solid rgb(253, 3, 57);
+    transition-property:border;
+    transition-duration: 1s;
+    animation-delay: 1s;
+    transition-timing-function:linear;
+}
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);  
+    
+}
+ 
+/* home page start */
+.homepage{
+    min-height:92vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.homepage p{
+    height: 120px;
+    overflow: hidden;
+
+}
+.waper{
+    display: inline-block;
+}
+.wel ,.homepage p{
+    position: relative;
+    left: -40px;
+    color:gray;
+    letter-spacing: 2px;
+    align-self: baseline;
+    text-shadow: 1px 1px 7px rgba(46, 183, 207.37);
+}
+.hbt{
+    color: white;
+    border: 3px solid black;
+    border-radius:24px;
+    background:linear-gradient(135deg, rgba(225, 225, 225, 0),rgba(225,225,225,0));
+    box-shadow: 3px 3px 12px 1px rgb(46, 183, 207);
+}
+.headline{
+    color: orangered;
+    text-transform: uppercase;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(300),
+             4s step-end infinite alternate
+}
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+.homepage p{
+    color:gray;
+}
+/* hover */
+.homepage p:hover{
+    height:100%;
+    overflow:visible;
+    border-radius: 12px;
+    padding: 20px;
+    color:white;
+    backdrop-filter:blur(8px);
+    background:linear-gradient(135deg, rgba(225,225,225,0.1),rgba(225,225,225,0));
+    box-shadow: 1px 1px 7px 5px rgb(46, 183, 207);
+}
+
+/* about page start*/
+.aboutpage{
+
+    height:fit-content;
+    overflow: hidden; 
+}
+
+/* service start */
+.servicespage{
+    height:fit-content;
+    overflow: hidden;
+    
+}
+
+.ser{
+    height:400px;
+    justify-content: space-evenly;
+    position: relative;
+    z-index:0;
+    
+}
+.back{
+    height: 70%;
+    width: 90%;
+    top: 50px;
+    position: absolute;
+   
+    z-index: 3;
+}
+
+.ser img:hover{
+    opacity: 0;
+}
+
+/* why */
+ .why{
+    height:fit-content;
+    overflow: hidden;
+ }
+ .why h1{
+    font-size:140px;
+ }
+/* our doctors start */
+.ourdoc{
+
+    height:fit-content;
+    overflow: hidden; 
+}
+/* our doctors end   */
+/* contact page */
+.contact{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    background-image: url(./image/contact.jpg);
+    backdrop-filter:opacity()px;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+/* contact page */
+.con{
+    width: 85%;
+   background:linear-gradient(135deg,#162F43,#162f43c2);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color: white;
+}
+/* fooder start */
+.fooderpage{
+    height:50vh;
+    background-color:#493628;
+
+}
+
+/* hover */
+
+/* fooder end */
+
+
+@media only screen and (max-width:600px){
+    
+    /* toggler navbar hover */
+    .logo a{
+        font-size:17px;
+    }
+    .list a{
+        font-size:13px; 
+        text-align: left;
+        margin-right: 20px;
+    }
+    .list a:hover{
+        cursor: pointer;
+        padding-left: 20px;
+        background-color: rgb(48, 48, 28);
+    }
+    /* toggler navbar hover */
+    .headline{
+        font-size:17px;
+    }
+    .waper p , .wel{
+        font-size:8px;
+    }
+}
+
+@media only screen and (min-width:900px){
+  
+}   
