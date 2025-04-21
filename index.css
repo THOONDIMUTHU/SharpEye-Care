@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;  
 }
+ 
 /* fonts */
 /* nav bar start */
-.navi{
+.navi {
     height:8vh;
     backdrop-filter:blur(8px);
     background:linear-gradient(135deg, rgba(225,225,225,0.1),rgba(225,225,225,0));
@@ -145,14 +146,13 @@ video{
     width: 100%;
     background-color: black;
     background-image: url(./image/contact.jpg);
+    background-size: cover;
     backdrop-filter:opacity()px;
     background-repeat: no-repeat;
-    background-size: auto;
-
+    
 }
-/* contact page */
 .con{
-    width: 85%;
+    width:70%;
    background:linear-gradient(135deg,#162F43,#162f43c2);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     color: white;
